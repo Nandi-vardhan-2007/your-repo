@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>GlassTube — Downloader</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <main class="center">
+    <div class="glass-card">
+      <h1>GlassTube</h1>
+      <p class="muted">Paste a YouTube link. We'll do the downloading so you don't have to.</p>
+
+      <form action="/download" method="post" class="form">
+        <input name="url" type="url" placeholder="https://youtu.be/..." required />
+        <div class="actions">
+          <button type="submit" class="btn">Download</button>
+        </div>
+      </form>
+
+      <p class="tiny muted">Built for private use. Public hosting can be problematic.</p>
+    </div>
+
+    <footer class="footer">
+      <p>Glassmorphism UI • yt-dlp backend</p>
+    </footer>
+  </main>
+</body>
+</html>
